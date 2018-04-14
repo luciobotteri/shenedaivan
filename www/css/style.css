@@ -1,0 +1,19 @@
+/* Empty. Add your own CSS if you like */
+
+      .icon-ita {
+        content: url('https://image.flaticon.com/icons/svg/197/197626.svg');
+        height: 30px;
+        width: 30px;
+      }
+
+      .icon-eng {
+        content: url('https://image.flaticon.com/icons/svg/197/197374.svg');
+        height: 30px;
+        width: 30px;
+      }
+
+      .icon-comment {
+        content: url('https://image.flaticon.com/icons/svg/134/134901.svg');
+        height: 30px;
+        width: 30px;
+      }
