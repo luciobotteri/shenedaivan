@@ -36,6 +36,9 @@ angular.module('starter.services')
          */
         function _addWord(newWord) {
             newWord.grammarStrings = []
+            if (!newWord.grammarTypes) {
+                newWord.grammarTypes = []
+            }
             newWord.grammarTypes.forEach(function (grammarType) {
                 switch (grammarType) {
                     case 0:

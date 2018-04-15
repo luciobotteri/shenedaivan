@@ -27,5 +27,16 @@
       </item>
     </div>
 
+    <br>
+
+    <div class="list card" ng-if="!!vm.parola.faukonIDs">
+      <div class="item item-divider">
+        Compare in frasi:
+      </div>
+      <ion-item ng-repeat="phraseId in vm.parola.faukonIDs | orderBy: 'faukonIDs'">
+        {{ phraseId }}
+      </ion-item>
+    </div>
+
   </ion-content>
 </ion-view>
