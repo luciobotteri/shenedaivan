@@ -35,6 +35,20 @@ angular.module('starter.services')
          * Aggiunge una parola al dizionario
          */
         function _addWord(newWord) {
+            newWord.it = [newWord.it]
+            newWord.en = [newWord.en]
+            var sameWord
+            _dictionary.forEach(function (word) {
+                if (word.sh == newWord.sh) {
+                    sameWord = word
+                    return
+                }
+            })
+            if (!!sameWord) {
+                newWord.it.push(sameWord.it)
+                newWord.en.push(sameWord.en)
+                return
+            }
             newWord.grammarStrings = []
             if (!newWord.grammarTypes) {
                 newWord.grammarTypes = []
