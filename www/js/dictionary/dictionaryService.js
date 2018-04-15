@@ -35,6 +35,53 @@ angular.module('starter.services')
          * Aggiunge una parola al dizionario
          */
         function _addWord(newWord) {
+            newWord.grammarStrings = []
+            newWord.grammarTypes.forEach(function (grammarType) {
+                switch (grammarType) {
+                    case 0:
+                        newWord.grammarStrings.push('Sostantivo')
+                        break
+                    case 1:
+                        newWord.grammarStrings.push('Avverbio')
+                        break
+                    case 2:
+                        newWord.grammarStrings.push('Aggettivo')
+                        break
+                    case 3:
+                        newWord.grammarStrings.push('Verbo')
+                        break
+                    case 4:
+                        newWord.grammarStrings.push('Preposizione')
+                        break
+                    case 5:
+                        newWord.grammarStrings.push('Articolo')
+                        break
+                    case 6:
+                        newWord.grammarStrings.push('Pronome')
+                        break
+                    case 7:
+                        newWord.grammarStrings.push('Numerale')
+                        break
+                    case 8:
+                        newWord.grammarStrings.push('Congiunzione')
+                        break
+                    case 9:
+                        newWord.grammarStrings.push('Esclamazione')
+                        break
+                    case 10:
+                        newWord.grammarStrings.push('Geografia')
+                        break
+                    case 11:
+                        newWord.grammarStrings.push('Nome')
+                        break
+                    case 13:
+                        newWord.grammarStrings.push('Parolaccia')
+                        break
+                    default:
+                        newWord.grammarStrings.push('Altro')
+                        break
+                }
+            })
             _dictionary.push(newWord)
         }
 

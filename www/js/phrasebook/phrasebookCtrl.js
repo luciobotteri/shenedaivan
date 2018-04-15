@@ -7,6 +7,6 @@ angular.module('starter.controllers')
         }
 
         vm.clickOnPhrase = function (phrase) {
-            $state.go('app.phrase', { phraseSh: phrase })
+            $state.go('app.phrase', { phraseId: phrase })
         }
     });

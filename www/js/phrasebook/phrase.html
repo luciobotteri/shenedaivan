@@ -2,28 +2,26 @@
     <ion-content>
   
       <div class="list card">
-        <div class="item item-divider">
+        <div class="item item-divider item-text-wrap">
           {{ vm.frase.sh }}
         </div>
         
-        <item class="item item-icon-left" style="height:50%" ng-if="!!vm.frase.it">
+        <item class="item item-icon-left item-text-wrap" ng-if="!!vm.frase.it">
           <i class="icon icon-ita"></i>
           {{ vm.frase.it }}
-          <p>
-            {{ vm.frase.it }}
-        </p>
         </item>
   
-        <item class="item item-icon-left" ng-if="!!vm.frase.en">
+        <item class="item item-icon-left item-text-wrap" ng-if="!!vm.frase.en">
           <i class="icon icon-eng"></i>
           {{ vm.frase.en }}
         </item>
   
-        <item class="item item-icon-left" ng-if="!!vm.frase.pinji">
+        <item class="item item-icon-left item-text-wrap" ng-if="!!vm.frase.pinji">
           <i class="icon icon-comment"></i>
           {{ vm.frase.pinji }}
         </item>
       </div>
+      <br>
   
     </ion-content>
   </ion-view>

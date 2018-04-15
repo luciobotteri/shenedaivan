@@ -39,12 +39,12 @@ angular.module('starter.services')
         }
 
         /**
-         * Riceve la parola in shenedaivan e restituisce l'intero oggetto parola
-         * se la parola non esiste restituisce null
+         * Riceve l'id e restituisce l'intero oggetto frase
+         * se la frase non esiste restituisce null
          */
-        function _getPhrase(sh) {
+        function _getPhrase(id) {
             for (let phrase of _phrasebook) {
-                if (phrase.sh == sh) return phrase
+                if (phrase.id == id) return phrase
             }
             return null
         }

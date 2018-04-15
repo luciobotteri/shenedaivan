@@ -66,7 +66,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       })
 
       .state('app.phrase', {
-        url: '/phrasebook/:phraseSh',
+        url: '/phrasebook/:phraseId',
         views: {
           'menuContent': {
             templateUrl: 'js/phrasebook/phrase.html',

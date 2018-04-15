@@ -34,9 +34,10 @@ angular.module('starter.services')
         /**
          * Aggiunge una parola al dizionario
          */
-        function _addStory(newStory) {
-            _stories.push(newStory)
-        }
+         function _addStory(newStory) {
+             newStory.content = newStory.content.replace(/\n/g, '<br>')
+             _stories.push(newStory)
+         }
 
         /**
          * Riceve il titolo della storia e restituisce l'oggetto

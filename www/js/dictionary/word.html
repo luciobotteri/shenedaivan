@@ -6,6 +6,11 @@
         {{ vm.parola.sh }}
       </div>
 
+      <ion-item class="item item-icon-left" ng-repeat="type in vm.parola.grammarStrings">
+        <i class="icon icon-info"></i>
+        {{ type }}
+      </ion-item>
+
       <item class="item item-icon-left" ng-if="!!vm.parola.it">
         <i class="icon icon-ita"></i>
         {{ vm.parola.it }}
